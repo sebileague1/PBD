@@ -16,6 +16,8 @@ Resursa partajata folosita pentru tranzactii este stocul articolelor vestimentar
 | `sql_database/sql_database.dmd` | Proiect Oracle SQL Developer Data Modeler |
 | `sql_database/Logical.png` | Diagrama logica |
 | `sql_database/Relational_1.png` | Diagrama relationala |
+| `sql_database/Logical_nou.pdf` | Diagrama logica exportata dupa modificarile finale |
+| `sql_database/Relational_1_nou.pdf` | Diagrama relationala exportata dupa modificarile finale |
 | `sql_database/00_drop_objects.sql` | Resetare obiecte pentru rulari repetate |
 | `sql_database/01_schema.sql` | Script DDL: tabele, chei, constrangeri, secvente si triggere |
 | `sql_database/02_insert_data.sql` | Date de test coerente |
@@ -72,4 +74,4 @@ Activeaza `DBMS Output`, deoarece scriptul de testare afiseaza rezultatele proce
 
 ## Observatie pentru predare
 
-Completeaza grupa in partea de sus a acestui README inainte de arhivare. Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, diagramele si scripturile SQL.
+Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, diagramele exportate si scripturile SQL.
