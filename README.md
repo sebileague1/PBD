@@ -9,6 +9,12 @@ Proiectul modeleaza si implementeaza baza de date pentru un magazin online cu ar
 
 Resursa partajata folosita pentru tranzactii este stocul articolelor vestimentare. Cand se plaseaza o comanda, stocul produsului este blocat si scazut atomic; daca tranzactia primeste rollback, stocul revine automat.
 
+## Contributii studenti
+
+- Danalache Emanuel: modelarea bazei de date in Oracle SQL Developer Data Modeler, definirea tabelelor, cheilor primare, cheilor externe si constrangerilor functionale.
+- Danalache Sebastian: dezvoltarea logicii stocate PL/SQL: pachetul `pkg_magazin_online`, procedura standalone `pr_afiseaza_comenzi_client`, functia standalone `fn_total_client`, triggerele de validare si scriptul de testare cu tranzactii.
+- Contributie comuna: popularea datelor de test, verificarea scenariilor pozitive/negative si rularea finala a proiectului in SQL Developer.
+
 ## Continut proiect
 
 | Fisier | Rol |
@@ -24,6 +30,7 @@ Resursa partajata folosita pentru tranzactii este stocul articolelor vestimentar
 | `sql_database/03_pachete_proceduri_functii.sql` | Pachet PL/SQL, procedura standalone si functie standalone |
 | `sql_database/04_testare.sql` | Teste cu blocuri anonime, exceptii si tranzactii |
 | `sql_database/run_all.sql` | Ruleaza proiectul complet in ordinea corecta |
+| `sql_database/script_complet_proiect.sql` | Script complet intr-un singur fisier: resetare, schema, date, logica stocata si teste |
 
 ## Ordine recomandata de rulare
 
@@ -41,6 +48,12 @@ Daca vrei sa rulezi manual, ordinea este:
 @02_insert_data.sql
 @03_pachete_proceduri_functii.sql
 @04_testare.sql
+```
+
+Pentru predare exista si varianta intr-un singur fisier:
+
+```sql
+@script_complet_proiect.sql
 ```
 
 Activeaza `DBMS Output`, deoarece scriptul de testare afiseaza rezultatele procedurilor si tranzactiilor.
