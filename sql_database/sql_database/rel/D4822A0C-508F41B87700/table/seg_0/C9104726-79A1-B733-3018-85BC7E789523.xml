@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9104726-79A1-B733-3018-85BC7E789523" name="detalii_comanda">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>B34BEEEE-41D6-6578-C2EE-C186A91CE6A1</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_comanda" id="FB64560A-F24A-3427-06DB-0B0B9A25ADEA">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>194ECAE4-C29B-A6DB-BBAD-46C7D1ED075E</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>5</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_plasare" id="3D6D2E3E-97BE-F25F-AB8A-396CA81F5ED3">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>090C1CC4-C75D-C48E-000D-B0FE0BF17B99</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modalitate_plata" id="8847ABE4-1BF1-91EC-20FD-131699AF0990">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>9234F491-7A0F-D527-5B96-1EC3F76B7E68</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<constraintName>detalii_comanda_mod_plata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="modalitate_plata IN (&apos;numerar&apos;, &apos;card&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_client" id="5A12D22C-2E7A-FCA5-C587-172D7D5526AF">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>E3113A93-D727-BF8B-8BA4-4C1CD0E8B73A</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="485F1878-B3BB-6863-541F-AF2B5C677393" referredColumn="A5319420-EA85-5AD5-2B4E-6A1B10F629CF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C3DBC64-A4BD-8ADD-C059-EC09D8C6FE3D" name="detalii_comanda_PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>BBB832F0-F996-2B9E-0F8F-ED8BE4B65CD8</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A12D22C-2E7A-FCA5-C587-172D7D5526AF"/>
+<colUsage columnID="FB64560A-F24A-3427-06DB-0B0B9A25ADEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6679529C-9D0A-BE36-64BF-BE267112E595" name="Clienti_detalii_comanda_fk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>4675646C-58F7-2E2A-CA95-B95E90011EFC</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A12D22C-2E7A-FCA5-C587-172D7D5526AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

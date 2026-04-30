@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7004044-C876-F6DE-AD61-33A9D16A9B63" name="Clienti_ar_ve_fk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ordsAlias>clienti_articole_vestimentare_fk</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clienti_cod_client" id="56A0B406-9587-C99A-08D4-9ECF71E22084">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>2</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7ED9BC0E-8CBD-DEE1-5020-5402DEBF4652" referredColumn="A5319420-EA85-5AD5-2B4E-6A1B10F629CF"/>
+</associations>
+</Column>
+<Column name="ar_ve_cod_articol" id="EFD26504-4137-2E61-5D58-9BA2E4EEB098">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>3</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0A33C55-2085-6EBA-A6E7-1946604C9ABC" referredColumn="B9E59CC9-2103-3E0C-5DA5-2B2A3CD50C5F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F833759-1181-1F93-B7B7-3B0F3774DA72" name="Clienti_ar_ve_fk_PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56A0B406-9587-C99A-08D4-9ECF71E22084"/>
+<colUsage columnID="EFD26504-4137-2E61-5D58-9BA2E4EEB098"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B419CB2F-5CF5-84F1-23FC-7A6053089747" name="Clienti_ar_ve_fk_Cli_FK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>2E97B77B-F913-C963-F000-DAEEF66565EC</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56A0B406-9587-C99A-08D4-9ECF71E22084"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D02659D-6FB6-0FBC-BCDC-8FD01F046B46" name="Clienti_ar_ve_fk_ar_ve_FK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>2E97B77B-F913-C963-F000-DAEEF66565EC</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD26504-4137-2E61-5D58-9BA2E4EEB098"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D306AAB1-4562-DF36-258F-7EB274AC7FE5" name="Clienti">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 21:48:23 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_client" id="7174B338-15EF-7F44-4506-EFF7ED679605">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-03 21:43:53 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="A2E579AB-B0F3-5ECE-167C-174DF10E4A2F">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-04 13:22:07 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="AF23B5AA-6B17-50BC-28D4-0AEFF3028A47">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-04 13:22:45 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="95F94BB7-2F4A-A799-6DDA-8C4A6F8A6AA5" name="Clienti PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-20 21:10:42 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7174B338-15EF-7F44-4506-EFF7ED679605</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

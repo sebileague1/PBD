@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="adresa" directorySegmentName="seg_0" id="880CDC18-A326-00AC-48F4-F193F4FF8D51">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="zip_code" id="57DDDEB4-5C35-1E61-61CC-F1790FF50BD4">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="strada" id="61D2AAF0-1470-C3BE-B817-11752144AD99">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oras" id="729CD371-4FD9-2872-5FF3-3E086B0F06F2">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_adresa" id="7BD2246C-92A5-F00E-6D86-7C9961EDE7C6">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="judet" id="BA85F0A0-EE65-75BA-9052-6634A2BFA879">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="adresa_PK" id="9D67357F-68C2-F15E-1F8C-9B030C034BEB">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="adresa_cod_adresa_uk" id="302C68D6-C206-6E64-CB39-A1A68714B45C">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

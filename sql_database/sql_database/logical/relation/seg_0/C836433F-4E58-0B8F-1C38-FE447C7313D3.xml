@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Clienti_conturi_fk" directorySegmentName="seg_0" id="C836433F-4E58-0B8F-1C38-FE447C7313D3">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 23:08:58 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<sourcePk>95F94BB7-2F4A-A799-6DDA-8C4A6F8A6AA5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>apartine unui</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D306AAB1-4562-DF36-258F-7EB274AC7FE5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FE98587F-5678-84A0-796B-88E7E49481BB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE98587F-5678-84A0-796B-88E7E49481BB" name="conturi">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:35:33 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="email" id="53ABBF4B-DE94-17D0-452B-5B49EDBCF287">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:35:47 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="parola" id="AD0FB9AD-E25E-3307-DB54-48D2F59ABED9">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:37:09 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar_telefon" id="5C278947-4499-5D67-9168-23A3933D2591">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:37:25 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_telefon REGEXP &apos;^[0-9]+$&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_client" id="C39425B3-F2BF-61D0-0686-0753511130D6">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-03 21:44:09 UTC</createdTime>
+<generatorID>C836433F-4E58-0B8F-1C38-FE447C7313D3</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>7174B338-15EF-7F44-4506-EFF7ED679605</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16F1D654-D27E-6C51-E250-CAF54118B0AA" name="conturi_email_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:42:23 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
+</engineerTo>
+<newElementsIDs>53ABBF4B-DE94-17D0-452B-5B49EDBCF287</newElementsIDs>
+<usedAttributes>
+<attributeRef>53ABBF4B-DE94-17D0-452B-5B49EDBCF287</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D8EC58F5-5657-AEE1-2870-C9326DD3DFFB" name="conturi_numar_telefon_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 22:43:12 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
+</engineerTo>
+<newElementsIDs>5C278947-4499-5D67-9168-23A3933D2591</newElementsIDs>
+<usedAttributes>
+<attributeRef>5C278947-4499-5D67-9168-23A3933D2591</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

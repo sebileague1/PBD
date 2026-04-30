@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7E95CBE-2D94-35B5-9353-33DCCA07308D" name="detalii_curier">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>A75B58B8-DCF4-3689-1F45-06BFFF19A203</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_curier" id="8502BCFE-0640-6465-1C08-E5CFF6B3D92D">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>AA9F958A-6F98-96A8-F2DD-2A7C2ED75233</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>6</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ridicare" id="4D1C8462-30C1-1CCD-6571-8F5EBA375EB9">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>4CF7A07C-A942-14C0-9F08-5AFB1C73A937</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_predare" id="A21DFAF2-93B5-339E-C8BA-0FDA4ACFAD8E">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>57EF5E17-2984-734A-16A8-CD69F7D9C306</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_client" id="A7D42892-8898-40C9-3B71-D350919E5871">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>5F7FD98C-308B-BB4D-F8EB-096E18C93A8E</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5708E1C3-26AD-FAF6-D101-2D0692B46D43" referredColumn="5A12D22C-2E7A-FCA5-C587-172D7D5526AF"/>
+</associations>
+</Column>
+<Column name="cod_comanda" id="7C69C018-3DFD-FC4B-5A3E-645A7060FC12">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>29EA5E3C-411D-ECAB-7E7D-647DD1CD3372</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>5</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5708E1C3-26AD-FAF6-D101-2D0692B46D43" referredColumn="FB64560A-F24A-3427-06DB-0B0B9A25ADEA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B137A666-E67C-8CFA-31C3-2C39778D31D9" name="detalii_curier_PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>0BC796B1-6E61-0291-7345-D1C11DB741EA</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8502BCFE-0640-6465-1C08-E5CFF6B3D92D"/>
+<colUsage columnID="A7D42892-8898-40C9-3B71-D350919E5871"/>
+<colUsage columnID="7C69C018-3DFD-FC4B-5A3E-645A7060FC12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10A6BCC3-8772-E6AD-B243-0D3672CFCF6A" name="detalii_com_detalii_cur_fk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7D42892-8898-40C9-3B71-D350919E5871"/>
+<colUsage columnID="7C69C018-3DFD-FC4B-5A3E-645A7060FC12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

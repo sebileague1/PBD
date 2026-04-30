@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="conturi" directorySegmentName="seg_0" id="62C56874-12B2-A838-7B1B-68392B2A20EC">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="numar_telefon" id="0C68CC7D-734C-7B99-F669-A17E1EB1797D">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="2E408FBE-5390-25ED-57B3-E2B9E9F68957">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_client" id="94A5241F-29A4-DFAC-87C4-25633BD61473">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="parola" id="D14E79DF-DD7D-EF23-6B26-4212C44FDA91">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="conturi__IDX" id="99A45989-CA88-00FE-4AAE-253598F03E43">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Clienti_conturi_fk" id="FA8A2215-D4F4-0CAF-27BB-4A71DEC163D0">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="conturi_numar_telefon_uk" id="2998C484-EF2B-3950-D1EE-BDA1D1FCEC88">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="conturi_email_uk" id="4B0A5745-35BF-2373-4B72-106DAB770353">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

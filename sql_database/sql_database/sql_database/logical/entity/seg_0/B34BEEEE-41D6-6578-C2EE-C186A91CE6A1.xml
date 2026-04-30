@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B34BEEEE-41D6-6578-C2EE-C186A91CE6A1" name="detalii_comanda">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 22:18:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_comanda" id="7586FDA6-FB6A-2342-45E3-6DFC497FC5B5">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:07:37 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_plasare" id="090C1CC4-C75D-C48E-000D-B0FE0BF17B99">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:09:02 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modalitate_plata" id="9234F491-7A0F-D527-5B96-1EC3F76B7E68">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:09:30 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<constraintName>detalii_comanda_modalitate_plata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="modalitate_plata IN (&apos;numerar&apos;, &apos;card&apos;)
+CHECK (modalitate_plata != &apos;card&apos; OR disponibilitate_cont &gt;= suma)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_articol" id="3938FE7A-7049-9F35-F487-BD9351AE7270">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:54:02 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="disponibilitate_cont" id="271222E4-371B-0995-225C-50238D977BBD">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-29 00:23:43 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBB832F0-F996-2B9E-0F8F-ED8BE4B65CD8" name="detalii_comanda PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:08:04 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7586FDA6-FB6A-2342-45E3-6DFC497FC5B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

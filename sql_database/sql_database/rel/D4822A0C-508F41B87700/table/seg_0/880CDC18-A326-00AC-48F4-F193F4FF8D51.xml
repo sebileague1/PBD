@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="880CDC18-A326-00AC-48F4-F193F4FF8D51" name="adresa">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>E357A31A-B368-B798-3494-249B834D95C6</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_adresa" id="7BD2246C-92A5-F00E-6D86-7C9961EDE7C6">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>F6F0B822-BD54-FB5E-6F76-15054409B758</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementIncrementBy>8</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="strada" id="61D2AAF0-1470-C3BE-B817-11752144AD99">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>08557C16-8233-D016-B255-64E04383869E</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oras" id="729CD371-4FD9-2872-5FF3-3E086B0F06F2">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>E742FDEB-A276-B64B-416C-8378EBC142DA</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="judet" id="BA85F0A0-EE65-75BA-9052-6634A2BFA879">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>17306602-3C84-4296-5CB8-1CE1CB264715</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip_code" id="57DDDEB4-5C35-1E61-61CC-F1790FF50BD4">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>2E51D207-C884-4741-CBAA-B2A5969A9793</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<constraintName>adresa_zip_code_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="zip_code REGEXP &apos;^[0-9]+$&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D67357F-68C2-F15E-1F8C-9B030C034BEB" name="adresa_PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>B30EDBC2-1289-BD70-B903-732A43B13372</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BD2246C-92A5-F00E-6D86-7C9961EDE7C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="302C68D6-C206-6E64-CB39-A1A68714B45C" name="adresa_cod_adresa_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>C38323EC-D521-C66A-C62A-8CBEF7FB8F10</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BD2246C-92A5-F00E-6D86-7C9961EDE7C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="articole_vestimentare" directorySegmentName="seg_0" id="A74D75A6-4EA9-E30E-3CE2-B7B84471A456">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="tip" id="097D7BAE-BD36-54BB-2A30-CF14093137C4">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="marime" id="535131CD-AE6E-1912-BD11-CDDDEFB94281">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pret" id="A208EB34-D95F-472A-73E2-C53D158563F2">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="firma" id="B4A8569C-93ED-6095-0BA1-0944E55D54BC">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_articol" id="B9E59CC9-2103-3E0C-5DA5-2B2A3CD50C5F">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="articole_vestimentare_PK" id="F2115928-C643-3583-43FD-2E7F3071D9F0">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="ar_ve_cod_articol_uk" id="35CA01B8-77A0-98F5-02A9-9ED53B4E603F">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

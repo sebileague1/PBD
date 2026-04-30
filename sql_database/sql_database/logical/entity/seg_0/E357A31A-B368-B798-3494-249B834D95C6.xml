@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E357A31A-B368-B798-3494-249B834D95C6" name="adresa">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 21:51:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_adresa" id="F6F0B822-BD54-FB5E-6F76-15054409B758">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:03:38 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="strada" id="08557C16-8233-D016-B255-64E04383869E">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:04:11 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oras" id="E742FDEB-A276-B64B-416C-8378EBC142DA">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:05:14 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="judet" id="17306602-3C84-4296-5CB8-1CE1CB264715">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:05:33 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zip_code" id="2E51D207-C884-4741-CBAA-B2A5969A9793">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:06:00 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<constraintName>adresa_zip_code_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="zip_code REGEXP &apos;^[0-9]+$&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B30EDBC2-1289-BD70-B903-732A43B13372" name="adresa PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:04:07 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F6F0B822-BD54-FB5E-6F76-15054409B758</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C38323EC-D521-C66A-C62A-8CBEF7FB8F10" name="adresa_cod_adresa_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:52:12 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
+</engineerTo>
+<newElementsIDs>F6F0B822-BD54-FB5E-6F76-15054409B758</newElementsIDs>
+<usedAttributes>
+<attributeRef>F6F0B822-BD54-FB5E-6F76-15054409B758</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

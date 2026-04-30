@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C0A33C55-2085-6EBA-A6E7-1946604C9ABC" containerWithKeyObject="F7004044-C876-F6DE-AD61-33A9D16A9B63" localFKIndex="5D02659D-6FB6-0FBC-BCDC-8FD01F046B46" name="Clienti_ar_ve_fk_ar_ve_FK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>2E97B77B-F913-C963-F000-DAEEF66565EC</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<referredTableLongName>articole_vestimentare</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A74D75A6-4EA9-E30E-3CE2-B7B84471A456</referredTableID>
+<keyObject>F2115928-C643-3583-43FD-2E7F3071D9F0</keyObject>
+<referredKeyID>F2115928-C643-3583-43FD-2E7F3071D9F0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_articol</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

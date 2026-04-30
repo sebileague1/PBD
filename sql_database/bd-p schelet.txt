@@ -1,0 +1,37 @@
+Temă: Gestionarea unui magazin online cu articole vestimentare
+
+
+Descrierea proiectului (non-tehnică): 
+
+- Proiectul își propune să ofere analiza, proiectarea și implementarea unei baze de date care să gestioneze fluxul de lucru(work flow-ul) 
+unui magazin online cu articole vestimentare. Scopul este de a îmbunătăți experiența utilizatorilor și de a crește eficiența operațiunilor interne.
+- Gestionarea magazinului online va permite clienților să se autentifice în contul personal pentru a plasa o comandă
+- Clienții vor putea adăuga oricâte produse vor dori în coșul de cumpărături, având opțiunea de a plăti fie cash, fie cu card. La plasarea unei comenzi, va fi necesară introducerea datelor personale, de contact și de livrare
+- Fiecare comandă este asociată cu o adresă de livrare
+- Procesul de livrare va fi transparent, generând date calendaristice pentru fiecare etapă a comenzii: plasare, preluare de către curier și livrare 
+către client
+- Utilizatorii vor avea posibilitatea de a selecta specificațiile produsului, precum mărimea, lungimea și lățimea
+- Angajații sunt cei care se ocupă de stocul produselor și de interacțiunea cu curierul 
+
+Limitări:
+- modalitatea de plată este disponibilă doar în numerar sau cu card.
+- se poate plăti cu cardul doar dacă suma respectivă este disponibilă în cont
+- nu se poate plasa o comandă dacă nu există un cont creat 
+- email-ul poate fi alcătuit din litere, cifre, @ și .
+- numărul de telefon esre alcătuit doar din cifre 
+- doi utilizatori nu pot avea același email sau număr de telefon
+
+
+Descrierea proiectului (tehnică):
+
+ Deoarece sunt numeroase comenzi și o prezența semnificativă a clienților care doresc achiziționarea articolelor vestimentare renumite, 
+avem nevoie de următoarele entități, date și informații pentru a organiza și gestiona work flow-ul:
+
+- Entitate articole_vestimentare: informații despre cod_articol, preț, mărime(S, M, L, XL, XXL), firma, tip(hanorac, tricou, incaltaminte)
+- Entitate clienți: informații despre cod_client, email, parolă, număr_telefon, cod_comanda
+- Entitate adresă: informații despre cod_adresă, stradă, oraș, județ, zip_code
+- Entitate detalii_comanda: informații despre cod_comandă, cod_articol, dată_plasare, modalitate_plată(numerar, card), disponibilitate_cont
+- Entitate detalii_curier: informații despre cod_curier, dată_ridicare, dată_predare, status_comanda 
+
+
+

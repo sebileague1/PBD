@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5B7537A-BF68-C57F-7C89-849008A49448" name="Clienti">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>D306AAB1-4562-DF36-258F-7EB274AC7FE5</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_client" id="A5319420-EA85-5AD5-2B4E-6A1B10F629CF">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>7174B338-15EF-7F44-4506-EFF7ED679605</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="61B6CA5E-3B05-1804-81A2-05DCF31B9A2E">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>A2E579AB-B0F3-5ECE-167C-174DF10E4A2F</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="47F0745D-C254-7889-7565-72D1B5D9E31A">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>AF23B5AA-6B17-50BC-28D4-0AEFF3028A47</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CDDF15E-209C-C0D3-7619-695FE20CBCAD" name="Clienti_PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<generatorID>95F94BB7-2F4A-A799-6DDA-8C4A6F8A6AA5</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5319420-EA85-5AD5-2B4E-6A1B10F629CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

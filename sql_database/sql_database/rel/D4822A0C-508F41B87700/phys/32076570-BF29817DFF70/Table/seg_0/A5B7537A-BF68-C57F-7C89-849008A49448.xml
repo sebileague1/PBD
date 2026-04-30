@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Clienti" directorySegmentName="seg_0" id="A5B7537A-BF68-C57F-7C89-849008A49448">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="prenume" id="47F0745D-C254-7889-7565-72D1B5D9E31A">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="61B6CA5E-3B05-1804-81A2-05DCF31B9A2E">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cod_client" id="A5319420-EA85-5AD5-2B4E-6A1B10F629CF">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Clienti_PK" id="4CDDF15E-209C-C0D3-7619-695FE20CBCAD">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:19 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

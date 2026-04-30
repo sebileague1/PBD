@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62C56874-12B2-A838-7B1B-68392B2A20EC" name="conturi">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>FE98587F-5678-84A0-796B-88E7E49481BB</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email" id="2E408FBE-5390-25ED-57B3-E2B9E9F68957">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>53ABBF4B-DE94-17D0-452B-5B49EDBCF287</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parola" id="D14E79DF-DD7D-EF23-6B26-4212C44FDA91">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>AD0FB9AD-E25E-3307-DB54-48D2F59ABED9</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_telefon" id="0C68CC7D-734C-7B99-F669-A17E1EB1797D">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>5C278947-4499-5D67-9168-23A3933D2591</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_telefon REGEXP &apos;^[0-9]+$&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_client" id="94A5241F-29A4-DFAC-87C4-25633BD61473">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>C39425B3-F2BF-61D0-0686-0753511130D6</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B96CDBD-8A33-B4DB-6B16-3FC13F64F4D6" referredColumn="A5319420-EA85-5AD5-2B4E-6A1B10F629CF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B0A5745-35BF-2373-4B72-106DAB770353" name="conturi_email_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>16F1D654-D27E-6C51-E250-CAF54118B0AA</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E408FBE-5390-25ED-57B3-E2B9E9F68957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2998C484-EF2B-3950-D1EE-BDA1D1FCEC88" name="conturi_numar_telefon_uk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>D8EC58F5-5657-AEE1-2870-C9326DD3DFFB</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C68CC7D-734C-7B99-F669-A17E1EB1797D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99A45989-CA88-00FE-4AAE-253598F03E43" name="conturi__IDX">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C836433F-4E58-0B8F-1C38-FE447C7313D3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="94A5241F-29A4-DFAC-87C4-25633BD61473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA8A2215-D4F4-0CAF-27BB-4A71DEC163D0" name="Clienti_conturi_fk">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 16:11:21 UTC</createdTime>
+<generatorID>C836433F-4E58-0B8F-1C38-FE447C7313D3</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94A5241F-29A4-DFAC-87C4-25633BD61473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="detalii_comanda_detalii_curier_fk" directorySegmentName="seg_0" id="F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D">
+<createdBy>danal</createdBy>
+<createdTime>2024-11-10 23:35:34 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<sourcePk>BBB832F0-F996-2B9E-0F8F-ED8BE4B65CD8</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>are mai multi</nameOnSource>
+<nameOnTarget>are o singura</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B34BEEEE-41D6-6578-C2EE-C186A91CE6A1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A75B58B8-DCF4-3689-1F45-06BFFF19A203</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

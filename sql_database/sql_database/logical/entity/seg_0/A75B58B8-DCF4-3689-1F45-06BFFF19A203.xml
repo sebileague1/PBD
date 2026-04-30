@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A75B58B8-DCF4-3689-1F45-06BFFF19A203" name="detalii_curier">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 22:18:28 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_curier" id="AA9F958A-6F98-96A8-F2DD-2A7C2ED75233">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:12:29 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_ridicare" id="4CF7A07C-A942-14C0-9F08-5AFB1C73A937">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:12:40 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_predare" id="57EF5E17-2984-734A-16A8-CD69F7D9C306">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:13:06 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_client" id="5F7FD98C-308B-BB4D-F8EB-096E18C93A8E">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-03 21:44:09 UTC</createdTime>
+<generatorID>F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>E3113A93-D727-BF8B-8BA4-4C1CD0E8B73A</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_comanda" id="29EA5E3C-411D-ECAB-7E7D-647DD1CD3372">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-03 21:44:51 UTC</createdTime>
+<generatorID>F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D</generatorID>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>194ECAE4-C29B-A6DB-BBAD-46C7D1ED075E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0BC796B1-6E61-0291-7345-D1C11DB741EA" name="detalii_curier PK">
+<createdBy>danal</createdBy>
+<createdTime>2024-10-28 23:12:38 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA9F958A-6F98-96A8-F2DD-2A7C2ED75233</attributeRef>
+<attributeRef>5F7FD98C-308B-BB4D-F8EB-096E18C93A8E</attributeRef>
+<attributeRef>29EA5E3C-411D-ECAB-7E7D-647DD1CD3372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

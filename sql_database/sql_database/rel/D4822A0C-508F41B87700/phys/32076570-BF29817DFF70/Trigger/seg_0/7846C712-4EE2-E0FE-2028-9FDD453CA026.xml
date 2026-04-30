@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_detalii_curier_data_ridicare" directorySegmentName="seg_0" id="7846C712-4EE2-E0FE-2028-9FDD453CA026">
+<createdBy>danal</createdBy>
+<createdTime>2024-12-11 17:16:57 UTC</createdTime>
+<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+IF( :new.data_ridicare <= SYSDATE )
+THEN
+RAISE_APPLICATION_ERROR( -20001,
+'Data invalida: ' || TO_CHAR( :new.data_ridicare, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>E7E95CBE-2D94-35B5-9353-33DCCA07308D</table>
+</TriggerOraclev10g>
