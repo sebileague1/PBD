@@ -1,67 +1,75 @@
-# SQL-Database-Schema-Design-Implementation 🗄️💾
+# PBD - Magazin online cu articole vestimentare
 
-[![Limbaj](https://img.shields.io/badge/Limbaj-SQL-informational)](https://en.wikipedia.org/wiki/SQL)
-[![Modelare](https://img.shields.io/badge/Modelare-Relational%20%7C%20Logical-yellow)]()
-[![Fișiere](https://img.shields.io/badge/Fi%C8%99iere-DDL%20%7C%20DML%20%7C%20Diagrams-lightgrey)]()
+Student: Danalache Emanuel
+Grupa: de completat inainte de predare
 
-## 📝 Descriere Generală
+## Descriere
 
-Acest repository conține toate etapele de dezvoltare a unei baze de date relaționale, de la concepție (modelare logică) până la implementarea fizică (DDL) și operațiunile de bază (DML - inserare, interogare).
+Proiectul modeleaza si implementeaza baza de date pentru un magazin online cu articole vestimentare. Aplicatia gestioneaza clienti, conturi, adrese de livrare, articole, comenzi, linii de comanda si detalii de curier.
 
-Proiectul este conceput pentru a demonstra cunoștințe în designul de baze de date, normalizare și manipularea datelor prin interogări SQL complexe.
+Resursa partajata folosita pentru tranzactii este stocul articolelor vestimentare. Cand se plaseaza o comanda, stocul produsului este blocat si scazut atomic; daca tranzactia primeste rollback, stocul revine automat.
 
-### Conținutul Proiectului
+## Continut proiect
 
-* **Modelare:** Diagramele care ilustrează structura logică și relațională (ERD) a bazei de date.
-* **Schema (DDL):** Scriptul SQL principal pentru crearea tabelelor și definirea tuturor constrângerilor (chei primare, chei străine, unicitate etc.).
-* **Populare (DML):** Scripturi pentru inserarea datelor inițiale necesare funcționării sistemului.
-* **Operațiuni Avansate:** Scripturi SQL demonstrative pentru validarea structurii și extragerea de informații complexe.
+| Fisier | Rol |
+| --- | --- |
+| `sql_database/sql_database.dmd` | Proiect Oracle SQL Developer Data Modeler |
+| `sql_database/Logical.png` | Diagrama logica |
+| `sql_database/Relational_1.png` | Diagrama relationala |
+| `sql_database/00_drop_objects.sql` | Resetare obiecte pentru rulari repetate |
+| `sql_database/01_schema.sql` | Script DDL: tabele, chei, constrangeri, secvente si triggere |
+| `sql_database/02_insert_data.sql` | Date de test coerente |
+| `sql_database/03_pachete_proceduri_functii.sql` | Pachet PL/SQL, procedura standalone si functie standalone |
+| `sql_database/04_testare.sql` | Teste cu blocuri anonime, exceptii si tranzactii |
+| `sql_database/run_all.sql` | Ruleaza proiectul complet in ordinea corecta |
 
-## 🏗️ Structura Bazei de Date (Diagrama Relațională)
+## Ordine recomandata de rulare
 
-Structura bazei de date este vizualizată prin diagrama relațională, care prezintă entitățile (tabelele) și relațiile dintre ele.
+In Oracle SQL Developer, deschide folderul `sql_database`, apoi ruleaza:
 
+```sql
+@run_all.sql
+```
 
+Daca vrei sa rulezi manual, ordinea este:
 
-**Notă:** Diagramele detaliate (Logic și Relațional) se află în folderul `sql_database/`.
+```sql
+@00_drop_objects.sql
+@01_schema.sql
+@02_insert_data.sql
+@03_pachete_proceduri_functii.sql
+@04_testare.sql
+```
 
-## ⚙️ Configurarea Bazei de Date
+Activeaza `DBMS Output`, deoarece scriptul de testare afiseaza rezultatele procedurilor si tranzactiilor.
 
-Pentru a implementa și a testa schema bazei de date, urmați pașii de mai jos. Fișierele SQL sunt scrise în dialect standard și ar trebui să fie compatibile cu majoritatea sistemelor de gestiune a bazelor de date (SGBD) populare (ex: Oracle, MySQL, PostgreSQL, SQL Server).
+## Cerinte acoperite
 
-### 1. Precondiții
+- Modelare in Data Modeler: model logic, model relational, imagini exportate.
+- DDL complet pentru tabele, chei primare, chei externe, constrangeri `CHECK`, `UNIQUE`, secvente si triggere.
+- Date de test pentru toate tabelele.
+- Pachet PL/SQL `pkg_magazin_online` cu proceduri de inserare, actualizare, stergere, plasare/anulare comanda, raportare si functii de calcul.
+- Procedura standalone `pr_afiseaza_comenzi_client`.
+- Functie standalone `fn_total_client`.
+- Cursori expliciti in pachet pentru raportarea comenzilor si stocurilor.
+- Exceptii controlate cu `RAISE_APPLICATION_ERROR`.
+- Triggere pentru:
+  - generare automata coduri;
+  - interzicerea comenzilor fara cont;
+  - validarea ordinii datelor plasare-ridicare-predare fara blocare fata de `SYSDATE`;
+  - actualizarea automata a statusului comenzii;
+  - scaderea si refacerea stocului la inserarea, actualizarea sau stergerea liniilor de comanda.
+- Script de testare cu tranzactie clara: comanda scade stocul, `ROLLBACK` reface stocul, iar `COMMIT` confirma schimbarea.
 
-* Un **Sistem de Gestiune a Bazelor de Date (SGBD)** instalat (de exemplu, Oracle, MySQL, PostgreSQL).
-* Un **client SQL** (de exemplu, SQL Developer, DBeaver, psql, MySQL Workbench).
+## Reguli functionale importante
 
-### 2. Crearea Schemei și a Tabelelor
+- Nu se poate plasa o comanda pentru un client fara cont.
+- Fiecare comanda are adresa de livrare.
+- Modalitatea de plata este doar `numerar` sau `card`.
+- Datele calendaristice pot fi in trecut sau in viitor, dar trebuie sa respecte ordinea logica: plasare <= ridicare <= predare.
+- Stocul nu poate deveni negativ.
+- Emailul, parola si numarul de telefon sunt validate prin constrangeri.
 
-Creați structura completă a bazei de date (tabele, coloane, constrângeri) rulând scriptul DDL.
+## Observatie pentru predare
 
-1.  Deschideți clientul SQL și conectați-vă la baza de date țintă.
-2.  Încărcați și executați scriptul:
-    ```sql
-    sql_database/sql_database(generated code).sql
-    ```
-    Acest script conține comenzile `CREATE TABLE` și `ALTER TABLE` necesare.
-
-### 3. Popularea Bazei de Date
-
-Introduceți datele inițiale în tabelele nou create.
-
-1.  Executați scriptul de inserare a datelor:
-    ```sql
-    sql_database/insert_data_into_tables.sql
-    ```
-    Acest script conține o serie de comenzi `INSERT INTO`.
-
-## 📊 Scripturi de Interogare și Operațiuni
-
-Proiectul include scripturi DML avansate pentru testarea și extragerea informațiilor din baza de date.
-
-| Fișier | Tip | Descriere |
-| :--- | :--- | :--- |
-| `sql_database/validare.sql` | DML (Interogări) | Conține interogări complexe pentru validarea integrității datelor sau pentru verificări specifice pe schema de bază. |
-| `sql_database/vizualizare.sql` | DML (Interogări) | Conține comenzi SQL, posibil vizualizări (`VIEW`) sau interogări cu `JOIN`-uri multiple, destinate extragerii de rapoarte sau date pentru afișare. |
-
-Pentru a le rula, executați scriptul dorit direct în clientul SQL după ce baza de date a fost populată.
+Completeaza grupa in partea de sus a acestui README inainte de arhivare. Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, diagramele si scripturile SQL.

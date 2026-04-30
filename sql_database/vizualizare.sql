@@ -1,60 +1,80 @@
+SET SERVEROUTPUT ON;
 
+SELECT * FROM adresa ORDER BY cod_adresa;
+SELECT * FROM clienti ORDER BY cod_client;
+SELECT * FROM conturi ORDER BY cod_client;
+SELECT * FROM articole_vestimentare ORDER BY cod_articol;
+SELECT * FROM detalii_comanda ORDER BY cod_client, cod_comanda;
+SELECT * FROM comanda_articole ORDER BY cod_client, cod_comanda, cod_articol;
+SELECT * FROM detalii_curier ORDER BY cod_client, cod_comanda;
+SELECT * FROM clienti_ar_ve_fk ORDER BY clienti_cod_client, ar_ve_cod_articol;
 
--------------------------- VIZUALIZARE ----------------------------------
+-- Clienti cu date de cont.
+SELECT
+    c.cod_client AS cod_client,
+    c.nume || ' ' || c.prenume AS nume_client,
+    co.email AS email,
+    co.numar_telefon AS numar_telefon
+FROM clienti c
+JOIN conturi co
+  ON co.cod_client = c.cod_client
+ORDER BY c.cod_client;
 
-SELECT * FROM ADRESA;
-SELECT * FROM CLIENTI;
-SELECT * FROM CONTURI;
-SELECT * FROM ARTICOLE_VESTIMENTARE; 
-SELECT * FROM DETALII_COMANDA;
-SELECT * FROM DETALII_CURIER;
-SELECT * FROM CLIENTI_AR_VE_FK;
+-- Comenzi cu adresa, curier si valoare totala.
+SELECT
+    dc.cod_comanda,
+    dc.cod_client,
+    c.nume || ' ' || c.prenume AS nume_client,
+    a.oras || ', ' || a.strada AS adresa_livrare,
+    dc.data_plasare,
+    dcu.data_ridicare,
+    dcu.data_predare,
+    dc.modalitate_plata,
+    dc.status_comanda,
+    SUM(ca.cantitate * ca.pret_unitar) AS total_comanda
+FROM detalii_comanda dc
+JOIN clienti c
+  ON c.cod_client = dc.cod_client
+JOIN adresa a
+  ON a.cod_adresa = dc.cod_adresa
+LEFT JOIN detalii_curier dcu
+  ON dcu.cod_client = dc.cod_client
+ AND dcu.cod_comanda = dc.cod_comanda
+LEFT JOIN comanda_articole ca
+  ON ca.cod_client = dc.cod_client
+ AND ca.cod_comanda = dc.cod_comanda
+GROUP BY
+    dc.cod_comanda,
+    dc.cod_client,
+    c.nume,
+    c.prenume,
+    a.oras,
+    a.strada,
+    dc.data_plasare,
+    dcu.data_ridicare,
+    dcu.data_predare,
+    dc.modalitate_plata,
+    dc.status_comanda
+ORDER BY dc.cod_client, dc.cod_comanda;
 
+-- Produse comandate si impactul asupra stocului.
+SELECT
+    ca.cod_comanda,
+    ca.cod_client,
+    av.cod_articol,
+    av.firma,
+    av.tip,
+    av.marime,
+    ca.cantitate,
+    ca.pret_unitar,
+    ca.cantitate * ca.pret_unitar AS valoare_linie,
+    av.stoc AS stoc_ramas
+FROM comanda_articole ca
+JOIN articole_vestimentare av
+  ON av.cod_articol = ca.cod_articol
+ORDER BY ca.cod_client, ca.cod_comanda, av.cod_articol;
 
--- afiseaza numele, prenumele clientilor impreuna cu email-ul si numarul de telefon
-SELECT 
-    c.cod_client AS "Cod Client", 
-    c.nume AS "Nume", 
-    c.prenume AS "Prenume", 
-    cont.email AS "Email", 
-    cont.numar_telefon AS "Numar Telefon"
-FROM 
-    clienti c
-JOIN 
-    conturi cont ON c.cod_client = cont.cod_client;
-
-
--- afiseaza comenzile clientilor cu detalii de livrare
-SELECT 
-    c.cod_client AS "Cod Client", 
-    c.nume || ' ' || c.prenume AS "Nume Client",
-    dc.cod_comanda AS "Cod Comanda", 
-    dc.data_plasare AS "Data Plasare", 
-    dc.modalitate_plata AS "Modalitate Plata",
-    dcur.data_ridicare AS "Data Ridicare",
-    dcur.data_predare AS "Data Predare"
-FROM 
-    clienti c
-JOIN 
-    detalii_comanda dc ON c.cod_client = dc.cod_client
-LEFT JOIN 
-    detalii_curier dcur ON dc.cod_client = dcur.cod_client AND dc.cod_comanda = dcur.cod_comanda;
-
-
--- afiseaza articolele vestimentare si clientii care le au achizitionat
-SELECT 
-    av.cod_articol AS "Cod Articol", 
-    av.firma AS "Firma", 
-    av.tip AS "Tip",
-    av.marime AS "Marime", 
-    av.pret AS "Pret",
-    c.cod_client AS "Cod Client",
-    c.nume || ' ' || c.prenume AS "Nume Client"
-FROM
-    articole_vestimentare av
-JOIN 
-    clienti_ar_ve_fk cavf ON av.cod_articol = cavf.ar_ve_cod_articol
-JOIN 
-    clienti c ON cavf.clienti_cod_client = c.cod_client;
-
-
+BEGIN
+    pkg_magazin_online.raport_stoc;
+END;
+/
