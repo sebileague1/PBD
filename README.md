@@ -1,7 +1,7 @@
 # PBD - Magazin online cu articole vestimentare
 
-Student: Danalache Emanuel
-Grupa: de completat inainte de predare
+Student: Danalache Emanuel, Danalache Sebastian
+Grupa: 1411A
 
 ## Descriere
 
