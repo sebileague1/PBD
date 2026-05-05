@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7004044-C876-F6DE-AD61-33A9D16A9B63" name="Clienti_articole_vestimentare_fk">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7004044-C876-F6DE-AD61-33A9D16A9B63" name="clienti_ar_ve_fk">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <ownerDesignName>sql_database</ownerDesignName>
@@ -16,7 +16,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementIncrementBy>2</autoIncrementIncrementBy>
@@ -33,7 +33,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementIncrementBy>3</autoIncrementIncrementBy>

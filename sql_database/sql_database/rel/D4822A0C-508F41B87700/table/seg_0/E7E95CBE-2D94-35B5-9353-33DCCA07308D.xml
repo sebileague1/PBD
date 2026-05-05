@@ -53,7 +53,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -70,7 +70,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementIncrementBy>5</autoIncrementIncrementBy>
@@ -95,7 +95,7 @@
 <colUsage columnID="7C69C018-3DFD-FC4B-5A3E-645A7060FC12"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="10A6BCC3-8772-E6AD-B243-0D3672CFCF6A" name="detalii_comanda_detalii_curier_fk">
+<ind_PK_UK id="10A6BCC3-8772-E6AD-B243-0D3672CFCF6A" name="det_com_curier_fk">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D</generatorID>

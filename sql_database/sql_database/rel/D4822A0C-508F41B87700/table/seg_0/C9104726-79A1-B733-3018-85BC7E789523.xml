@@ -38,7 +38,7 @@
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>9234F491-7A0F-D527-5B96-1EC3F76B7E68</generatorID>
 <ownerDesignName>sql_database</ownerDesignName>
-<constraintName>detalii_comanda_modalitate_plata_ck</constraintName>
+<constraintName>det_com_mod_plata_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,6 +48,7 @@
 </checkConstraint>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
 </Column>
 <Column name="cod_client" id="5A12D22C-2E7A-FCA5-C587-172D7D5526AF">
 <createdBy>danal</createdBy>
@@ -58,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -132,4 +133,18 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="det_com_mod_plata_ck" directorySegmentName="seg_0" id="DDA758C0-9458-9003-BD13-3DFC5DC91820">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-05 16:13:39 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<rule><![CDATA[modalitate_plata IN ('numerar', 'card')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="det_com_status_ck" directorySegmentName="seg_0" id="2AC4AA47-BB5E-A132-0398-D2BE55AE5B94">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-05 16:14:00 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<rule><![CDATA[status_comanda IN ('plasata', 'preluata', 'livrata', 'anulata')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

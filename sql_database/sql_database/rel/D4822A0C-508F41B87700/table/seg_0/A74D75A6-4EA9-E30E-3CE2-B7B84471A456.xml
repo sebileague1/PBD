@@ -44,7 +44,7 @@
 <createdTime>2024-12-11 16:11:19 UTC</createdTime>
 <generatorID>13A66ED4-E646-38E8-A216-2B4073A98014</generatorID>
 <ownerDesignName>sql_database</ownerDesignName>
-<constraintName>articole_vestimentare_marime_ck</constraintName>
+<constraintName>ar_ve_marime_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -58,6 +58,7 @@
 </listOfValues>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
 </Column>
 <Column name="firma" id="B4A8569C-93ED-6095-0BA1-0944E55D54BC">
 <createdBy>danal</createdBy>
@@ -127,4 +128,18 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ar_ve_marime_ck" directorySegmentName="seg_0" id="C691A7C1-226D-E28C-679F-97037D5E66A4">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-05 16:12:46 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<rule><![CDATA[marime IN ('L', 'M', 'S', 'XL', 'XXL')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ar_ve_stoc_ck" directorySegmentName="seg_0" id="1AD28962-66BD-9DBB-8BC8-528484A2376D">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-05 16:13:10 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<rule><![CDATA[stoc >= 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>
