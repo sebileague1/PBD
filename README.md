@@ -103,6 +103,7 @@ Rularea finala a fost verificata in SQL Developer pe conexiunea `PBD_LOCAL`. Scr
 - Datele calendaristice pot fi in trecut sau in viitor, dar trebuie sa respecte ordinea logica: plasare <= ridicare <= predare.
 - Stocul nu poate deveni negativ.
 - Emailul, parola si numarul de telefon sunt validate prin constrangeri.
+<<<<<<< HEAD
 
 ## Rezultate testare finala
 
@@ -132,3 +133,5 @@ Mesaje importante obtinute la testare:
 ## Observatie pentru predare
 
 Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, directorul Data Modeler cu acelasi nume, diagramele finale exportate, scriptul DDL generat din Data Modeler si scripturile SQL pentru schema, date, logica stocata si testare.
+=======
+>>>>>>> 9c78b45e487edeee9cbc1fc3ed025f8f28fa5dc1
