@@ -130,8 +130,3 @@ Mesaje importante obtinute la testare:
 - `Comanda anulata; stoc articol 2 dupa anulare=7`
 - `Testare finalizata.`
 
-## Observatie pentru predare
-
-Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, directorul Data Modeler cu acelasi nume, diagramele finale exportate, scriptul DDL generat din Data Modeler si scripturile SQL pentru schema, date, logica stocata si testare.
-=======
->>>>>>> 9c78b45e487edeee9cbc1fc3ed025f8f28fa5dc1
