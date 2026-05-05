@@ -84,7 +84,3 @@ Activeaza `DBMS Output`, deoarece scriptul de testare afiseaza rezultatele proce
 - Datele calendaristice pot fi in trecut sau in viitor, dar trebuie sa respecte ordinea logica: plasare <= ridicare <= predare.
 - Stocul nu poate deveni negativ.
 - Emailul, parola si numarul de telefon sunt validate prin constrangeri.
-
-## Observatie pentru predare
-
-Arhiva finala trebuie sa contina intregul folder al proiectului, inclusiv modelul `.dmd`, diagramele exportate si scripturile SQL.
