@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E357A31A-B368-B798-3494-249B834D95C6" name="adresa">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 21:51:19 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="cod_adresa" id="F6F0B822-BD54-FB5E-6F76-15054409B758">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:03:38 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -31,7 +31,7 @@
 <Attribute name="strada" id="08557C16-8233-D016-B255-64E04383869E">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:04:11 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -44,7 +44,7 @@
 <Attribute name="oras" id="E742FDEB-A276-B64B-416C-8378EBC142DA">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:05:14 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -57,7 +57,7 @@
 <Attribute name="judet" id="17306602-3C84-4296-5CB8-1CE1CB264715">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:05:33 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -70,7 +70,7 @@
 <Attribute name="zip_code" id="2E51D207-C884-4741-CBAA-B2A5969A9793">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:06:00 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
 </engineerTo>
@@ -89,7 +89,7 @@
 <identifier id="B30EDBC2-1289-BD70-B903-732A43B13372" name="adresa PK">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:04:07 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>
@@ -102,7 +102,7 @@
 <identifier id="C38323EC-D521-C66A-C62A-8CBEF7FB8F10" name="adresa_cod_adresa_uk">
 <createdBy>danal</createdBy>
 <createdTime>2024-10-28 23:52:12 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="false"/>

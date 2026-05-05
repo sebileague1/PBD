@@ -9,7 +9,6 @@ SELECT * FROM comanda_articole ORDER BY cod_client, cod_comanda, cod_articol;
 SELECT * FROM detalii_curier ORDER BY cod_client, cod_comanda;
 SELECT * FROM clienti_ar_ve_fk ORDER BY clienti_cod_client, ar_ve_cod_articol;
 
--- Clienti cu date de cont.
 SELECT
     c.cod_client AS cod_client,
     c.nume || ' ' || c.prenume AS nume_client,
@@ -20,7 +19,6 @@ JOIN conturi co
   ON co.cod_client = c.cod_client
 ORDER BY c.cod_client;
 
--- Comenzi cu adresa, curier si valoare totala.
 SELECT
     dc.cod_comanda,
     dc.cod_client,
@@ -57,7 +55,6 @@ GROUP BY
     dc.status_comanda
 ORDER BY dc.cod_client, dc.cod_comanda;
 
--- Produse comandate si impactul asupra stocului.
 SELECT
     ca.cod_comanda,
     ca.cod_client,

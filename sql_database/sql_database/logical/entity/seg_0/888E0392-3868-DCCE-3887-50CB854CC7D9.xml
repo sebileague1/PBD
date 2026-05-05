@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="888E0392-3868-DCCE-3887-50CB854CC7D9" name="comanda_articole">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-04-30 20:44:52 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cantitate" id="4C5CBF8E-AD49-61EF-0596-198B37AC996C">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-04-30 20:45:17 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret_unitar" id="30A9F8EE-B904-428F-4615-06C8FF22DE10">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-04-30 20:45:24 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_client" id="2378CF82-91C3-CE14-01D7-48D26758B9FB">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:02:17 UTC</createdTime>
+<generatorID>6C3E37A6-0CD0-BA7A-7F8C-AC4468DDD304</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>E3113A93-D727-BF8B-8BA4-4C1CD0E8B73A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_comanda" id="A040C005-EADE-F0ED-876F-5A1174E971E3">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:02:17 UTC</createdTime>
+<generatorID>6C3E37A6-0CD0-BA7A-7F8C-AC4468DDD304</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>194ECAE4-C29B-A6DB-BBAD-46C7D1ED075E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_articol" id="D29AD0B7-D0EE-961B-4A5C-4E6FF04090F9">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:02:56 UTC</createdTime>
+<generatorID>BE93ACBE-8824-3892-62FE-B83C1A02A935</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<referedAttribute>293B5AC5-4646-F25C-3FC9-229D36F1535B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

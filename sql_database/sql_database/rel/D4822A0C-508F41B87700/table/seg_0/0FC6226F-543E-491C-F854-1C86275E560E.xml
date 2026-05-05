@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FC6226F-543E-491C-F854-1C86275E560E" name="comanda_articole">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>888E0392-3868-DCCE-3887-50CB854CC7D9</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cantitate" id="7C51D874-99A7-349D-96E4-F09418FA2892">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>4C5CBF8E-AD49-61EF-0596-198B37AC996C</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret_unitar" id="BA8FBE74-259E-4C79-DEBB-4F88D43DCB6D">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>30A9F8EE-B904-428F-4615-06C8FF22DE10</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalii_comanda_cod_client" id="8763F11A-8E01-B4B4-BD92-1B3954F079B4">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>2378CF82-91C3-CE14-01D7-48D26758B9FB</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C04D03E-B7D9-EFF6-704F-904E019D7A42" referredColumn="5A12D22C-2E7A-FCA5-C587-172D7D5526AF"/>
+</associations>
+</Column>
+<Column name="detalii_comanda_cod_comanda" id="DA34882A-511F-15F9-2CE3-FDAADFE441D6">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>A040C005-EADE-F0ED-876F-5A1174E971E3</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C04D03E-B7D9-EFF6-704F-904E019D7A42" referredColumn="FB64560A-F24A-3427-06DB-0B0B9A25ADEA"/>
+</associations>
+</Column>
+<Column name="articole_vestimentare_cod_articol" id="FF2EAF56-D159-42EF-D9FE-671BA5412FCE">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>D29AD0B7-D0EE-961B-4A5C-4E6FF04090F9</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="390B95E5-C263-775E-86C1-9E596E053171" referredColumn="B9E59CC9-2103-3E0C-5DA5-2B2A3CD50C5F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B98CD3E2-CDF3-3478-8029-C81458B84085" name="articole_comanda_articole">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>BE93ACBE-8824-3892-62FE-B83C1A02A935</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF2EAF56-D159-42EF-D9FE-671BA5412FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6031674C-4FBD-D46B-8A2F-5B935D23FFB4" name="detalii_comanda_comanda_articole">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>6C3E37A6-0CD0-BA7A-7F8C-AC4468DDD304</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8763F11A-8E01-B4B4-BD92-1B3954F079B4"/>
+<colUsage columnID="DA34882A-511F-15F9-2CE3-FDAADFE441D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

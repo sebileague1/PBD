@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="adresa_detalii_comanda" directorySegmentName="seg_0" id="B9D781E1-83FD-4669-76D1-D292DA742284">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-04-30 22:18:54 UTC</createdTime>
+<ownerDesignName>sql_database</ownerDesignName>
+<engineerTo>
+<item key="D4822A0C-AC8C-C3C3-43A0-508F41B87700" value="true"/>
+</engineerTo>
+<sourcePk>B30EDBC2-1289-BD70-B903-732A43B13372</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E357A31A-B368-B798-3494-249B834D95C6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B34BEEEE-41D6-6578-C2EE-C186A91CE6A1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -3,7 +3,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>B34BEEEE-41D6-6578-C2EE-C186A91CE6A1</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>194ECAE4-C29B-A6DB-BBAD-46C7D1ED075E</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -26,7 +26,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>090C1CC4-C75D-C48E-000D-B0FE0BF17B99</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -37,8 +37,8 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>9234F491-7A0F-D527-5B96-1EC3F76B7E68</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
-<constraintName>detalii_comanda_mod_plata_ck</constraintName>
+<ownerDesignName>sql_database</ownerDesignName>
+<constraintName>detalii_comanda_modalitate_plata_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -53,17 +53,45 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>E3113A93-D727-BF8B-8BA4-4C1CD0E8B73A</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="485F1878-B3BB-6863-541F-AF2B5C677393" referredColumn="A5319420-EA85-5AD5-2B4E-6A1B10F629CF"/>
+</associations>
+</Column>
+<Column name="status_comanda" id="9D2DC9A7-1D24-7E76-4590-29A2D508F135">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>7CEB8A78-E77B-DE04-16CD-9B1BFB449A0F</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa_cod_adresa" id="FC96CF31-6DF6-F1DD-AD3C-76DB3158E1B4">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>A30FB5F5-304E-3A8B-7E57-7442796F1EFE</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D10D8C25-285D-11E6-8BA4-6E01B0CFA7CA" referredColumn="7BD2246C-92A5-F00E-6D86-7C9961EDE7C6"/>
 </associations>
 </Column>
 </columns>
@@ -72,7 +100,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>BBB832F0-F996-2B9E-0F8F-ED8BE4B65CD8</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -85,11 +113,22 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>4675646C-58F7-2E2A-CA95-B95E90011EFC</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5A12D22C-2E7A-FCA5-C587-172D7D5526AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9B8A60E-5E01-ADE2-0AC9-6D778F75C13F" name="adresa_detalii_comanda">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>B9D781E1-83FD-4669-76D1-D292DA742284</generatorID>
+<ownerDesignName>sql_database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC96CF31-6DF6-F1DD-AD3C-76DB3158E1B4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

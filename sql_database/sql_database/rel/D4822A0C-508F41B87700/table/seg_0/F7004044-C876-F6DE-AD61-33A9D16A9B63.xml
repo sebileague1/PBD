@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7004044-C876-F6DE-AD61-33A9D16A9B63" name="Clienti_ar_ve_fk">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7004044-C876-F6DE-AD61-33A9D16A9B63" name="Clienti_articole_vestimentare_fk">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <ordsAlias>clienti_articole_vestimentare_fk</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,12 +11,12 @@
 <Column name="Clienti_cod_client" id="56A0B406-9587-C99A-08D4-9ECF71E22084">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementIncrementBy>2</autoIncrementIncrementBy>
@@ -28,12 +28,12 @@
 <Column name="ar_ve_cod_articol" id="EFD26504-4137-2E61-5D58-9BA2E4EEB098">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementIncrementBy>3</autoIncrementIncrementBy>
@@ -47,7 +47,7 @@
 <ind_PK_UK id="7F833759-1181-1F93-B7B7-3B0F3774DA72" name="Clienti_ar_ve_fk_PK">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -60,7 +60,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>2E97B77B-F913-C963-F000-DAEEF66565EC</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -71,7 +71,7 @@
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 16:11:21 UTC</createdTime>
 <generatorID>2E97B77B-F913-C963-F000-DAEEF66565EC</generatorID>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5708E1C3-26AD-FAF6-D101-2D0692B46D43" containerWithKeyObject="E7E95CBE-2D94-35B5-9353-33DCCA07308D" localFKIndex="10A6BCC3-8772-E6AD-B243-0D3672CFCF6A" name="detalii_comanda_detalii_curier_fk">
-<createdBy>danal</createdBy>
-<createdTime>2024-12-11 16:11:21 UTC</createdTime>
-<generatorID>F2AC43E8-2B21-24D0-1ECC-10334E9FAA8D</generatorID>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8C04D03E-B7D9-EFF6-704F-904E019D7A42" containerWithKeyObject="0FC6226F-543E-491C-F854-1C86275E560E" localFKIndex="6031674C-4FBD-D46B-8A2F-5B935D23FFB4" name="detalii_comanda_comanda_articole">
+<createdBy>sebastian.danalache</createdBy>
+<createdTime>2026-05-02 20:15:59 UTC</createdTime>
+<generatorID>6C3E37A6-0CD0-BA7A-7F8C-AC4468DDD304</generatorID>
 <ownerDesignName>sql_database</ownerDesignName>
 <referredTableLongName>detalii_comanda</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
