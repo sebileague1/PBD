@@ -37,7 +37,7 @@ Stadiu actual: proiectul este actualizat cu tabela `comanda_articole`, coloana `
 
 Observatie: scriptul `sql_database_generated_from_model.sql` este scriptul obtinut din Data Modeler pentru schema relationala. Scriptul complet de proiect, cu pachete, proceduri, functii, triggere functionale si teste, este format din scripturile `00` - `04`, rulate prin `run_all.sql`.
 
-## Ordine recomandata de rulare
+## Ordine de rulare
 
 In Oracle SQL Developer, deschide folderul `sql_database`, apoi ruleaza:
 
@@ -45,7 +45,7 @@ In Oracle SQL Developer, deschide folderul `sql_database`, apoi ruleaza:
 @run_all.sql
 ```
 
-Daca vrei sa rulezi manual, ordinea este:
+Daca rulezi manual, ordinea este:
 
 ```sql
 @00_drop_objects.sql
@@ -54,16 +54,6 @@ Daca vrei sa rulezi manual, ordinea este:
 @03_pachete_proceduri_functii.sql
 @04_testare.sql
 ```
-
-Pentru predare exista si varianta intr-un singur fisier:
-
-```sql
-@script_complet_proiect.sql
-```
-
-Activeaza `DBMS Output`, deoarece scriptul de testare afiseaza rezultatele procedurilor si tranzactiilor.
-
-Rularea finala a fost verificata in SQL Developer pe conexiunea `PBD_LOCAL`. Scriptul `run_all.sql` recreeaza schema, insereaza datele, compileaza pachetul/procedurile/functiile si ruleaza testele fara erori necontrolate.
 
 ## Cerinte acoperite
 
@@ -118,15 +108,3 @@ Scriptul `run_all.sql` verifica urmatoarele scenarii:
 - tranzactie cu `COMMIT`, unde stocul ramane modificat;
 - anularea comenzii, cu refacerea stocului;
 - teste negative pentru stoc insuficient, date invalide, email invalid, comanda fara cont si date de curier invalide.
-
-Mesaje importante obtinute la testare:
-
-- `Schema creata cu succes.`
-- `Date de test inserate cu succes.`
-- `Pachetul, procedura si functia standalone au fost create.`
-- `CRUD pachet: OK`
-- `Dupa ROLLBACK stoc=10`
-- `Stoc articol 2 dupa COMMIT=6`
-- `Comanda anulata; stoc articol 2 dupa anulare=7`
-- `Testare finalizata.`
-
