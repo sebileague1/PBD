@@ -2,14 +2,14 @@
 <TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_detalii_curier_data_predare" directorySegmentName="seg_0" id="E5AA9DC5-6100-F5AA-FC5A-3E7A832109C9">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 17:18:17 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <actions>INSERT, UPDATE</actions>
 <body><![CDATA[BEGIN
-IF( :new.data_predare <= SYSDATE )
-THEN
-RAISE_APPLICATION_ERROR( -20001,
-'Data invalida: ' || TO_CHAR( :new.data_predare, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
-END IF;
+    IF :new.data_predare < :new.data_ridicare THEN
+        RAISE_APPLICATION_ERROR(-20003, 
+            'Eroare: Data predare (' || TO_CHAR(:new.data_predare, 'DD.MM.YYYY') || 
+            ') nu poate fi inainte de data ridicarii (' || TO_CHAR(:new.data_ridicare, 'DD.MM.YYYY') || ').');
+    END IF;
 END;]]></body>
 <triggerTime>BEFORE</triggerTime>
 <table>E7E95CBE-2D94-35B5-9353-33DCCA07308D</table>

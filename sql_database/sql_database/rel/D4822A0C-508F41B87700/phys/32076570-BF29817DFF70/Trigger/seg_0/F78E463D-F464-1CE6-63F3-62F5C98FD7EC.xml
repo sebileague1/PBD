@@ -2,14 +2,12 @@
 <TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_detalii_comanda_data_plasare" directorySegmentName="seg_0" id="F78E463D-F464-1CE6-63F3-62F5C98FD7EC">
 <createdBy>danal</createdBy>
 <createdTime>2024-12-11 17:10:18 UTC</createdTime>
-<ownerDesignName>Danalache_Emanuel</ownerDesignName>
+<ownerDesignName>sql_database</ownerDesignName>
 <actions>INSERT, UPDATE</actions>
 <body><![CDATA[BEGIN
-IF( :new.data_plasare <= SYSDATE )
-THEN
-RAISE_APPLICATION_ERROR( -20001,
-'Data invalida: ' || TO_CHAR( :new.data_plasare, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
-END IF;
+    IF :new.data_plasare IS NULL THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Data plasarii comenzii este obligatorie.');
+    END IF;
 END;]]></body>
 <triggerTime>BEFORE</triggerTime>
 <table>C9104726-79A1-B733-3018-85BC7E789523</table>
